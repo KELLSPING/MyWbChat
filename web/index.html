@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eel Example</title>
+</head>
+<body>
+    <h1>Hello from HTML</h1>
+    <button onclick="sayHello()">Say Hello from Python</button>
+    <script>
+        function sayHello() {
+            var x = prompt("Enter a message:");
+            eel.say_hello_py(x)(function (response) {
+                alert(response);
+            });
+        }
+    </script>
+    <script src="/eel.js"></script>
+</body>
+</html>
